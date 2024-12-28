@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --handle-color: #784be8;
+}
+
+.react-flow__node {
+  @apply min-w-[150px];
+}
+
+.react-flow__handle {
+  width: 8px !important;
+  height: 8px !important;
+  background-color: var(--handle-color) !important;
+}
+
+.react-flow__handle-top {
+  top: -4px !important;
+}
+
+.react-flow__handle-bottom {
+  bottom: -4px !important;
+}
+
+.nodrag {
+  cursor: pointer;
+}
